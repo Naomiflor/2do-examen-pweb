@@ -13,25 +13,112 @@
 
 <body>
     <header>
-        <h1>Lunare</h1>
-        <nav>
-           <ul>
-    <li><a href="index.html">Inicio</a></li>
-    <li><a href="nosotros.html">Quiénes somos</a></li>
 
-    <li>
-        <a href="productos.html">Productos</a>
-        <ul class="submenu">
-            <li><a href="#sombras">Sombras</a></li>
-            <li><a href="#labiales">Labiales</a></li>
-        </ul>
-    </li>
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
 
-    <li><a href="contacto.html">Contacto</a></li>
-   
-</ul>
-        </nav>
-    </header>
+    <div class="container">
+
+        <a class="navbar-brand" href="index.html">
+
+            <h1 class="m-0">Lunare</h1>
+
+        </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+
+                    <a class="nav-link"
+                       href="index.html">
+
+                        Inicio
+
+                    </a>
+
+                </li>
+
+                <li class="nav-item">
+
+                    <a class="nav-link"
+                       href="nosotros.html">
+
+                        Quiénes somos
+
+                    </a>
+
+                </li>
+
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link dropdown-toggle active"
+                       href="#"
+                       role="button"
+                       data-bs-toggle="dropdown">
+
+                        Productos
+
+                    </a>
+
+                    <ul class="dropdown-menu">
+
+                        <li>
+
+                            <a class="dropdown-item"
+                               href="#sombras">
+
+                                Sombras
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a class="dropdown-item"
+                               href="#labiales">
+
+                                Labiales
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li class="nav-item">
+
+                    <a class="nav-link"
+                       href="contacto.html">
+
+                        Contacto
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+</header>
     <main>
 
         <section class="productos-intro">
@@ -45,81 +132,380 @@
                 <cite> – Lunare Beauty</cite>
             </blockquote>
             <hr>
- <div class="productos-flex">
+<div class="container my-5">
 
-        <article class="product-card" id="sombras">
-            <span class="badge">Nuevo</span>
-            <h3>Sombras</h3>
-            <figure>
-                    <img src="img/lila.jpg" 
-                         alt="Sombra color lila">
-                    <figcaption>Paleta Lila Dreams</figcaption>
-                </figure>
+    <div class="row g-4">
 
-                <ul>
-                    <li>Sombras mate</li>
-                    <li>Sombras satinadas</li>
-                    <li>Sombras con glitter</li>
-                </ul>
+        <!-- SOMBRAS -->
 
-                <ol>
-                    <li>Apta para ojos sensibles</li>
-                    <li>Resistente al agua</li>
-                    <li>Duración de hasta 12 horas</li>
-                </ol>
-            </article>
+        <div class="col-lg-6" id="sombras">
 
+            <div class="card product-card h-100 shadow-sm border-0">
 
-           <article class="product-card" id="labiales">
-                <h3>Labiales</h3>
+                <span class="badge bg-danger position-absolute top-0 end-0 m-3">
+                    Nuevo
+                </span>
 
-                <figure>
-                    <img src="img/labiosrojos.jpg" 
-                         alt="Labial color rojo">
-                    <figcaption>Red Passion</figcaption>
-                </figure>
+                <img src="img/lila.jpg"
+                     class="card-img-top"
+                     alt="Paleta Lila Dreams">
 
-                <p>Colores intensos y de larga duración.<br>
-                   Gracias a la fórmula <abbr title="Larga Duración Extrema">LDE</abbr>, no transfiere fácilmente.
-                </p>
-            </article>
- </div>
+                <div class="card-body">
+
+                    <h3 class="card-title text-center">
+                        Sombras
+                    </h3>
+
+                    <p class="text-center text-muted">
+                        Paleta Lila Dreams
+                    </p>
+
+                    <p>
+                        Descubrí una colección de sombras mate,
+                        satinadas y glitter con gran pigmentación,
+                        ideales para cualquier ocasión.
+                    </p>
+
+                    <button
+    class="btn btn-lunare w-100"
+    data-bs-toggle="modal"
+    data-bs-target="#modalSombras">
+
+    ✨ Ver detalles
+
+</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- LABIALES -->
+
+        <div class="col-lg-6" id="labiales">
+
+            <div class="card product-card h-100 shadow-sm border-0">
+                <img src="img/labiosrojos.jpg"
+                     class="card-img-top"
+                     alt="Labial Red Passion">
+
+                <div class="card-body">
+
+                    <h3 class="card-title text-center">
+                        Labiales
+                    </h3>
+
+                    <p class="text-center text-muted">
+                        Red Passion
+                    </p>
+
+                    <p>
+                        Colores intensos y de larga duración,
+                        con una fórmula confortable que ayuda a
+                        mantener los labios hidratados.
+                    </p>
+
+                    <button
+    class="btn btn-lunare w-100"
+    data-bs-toggle="modal"
+    data-bs-target="#modalLabiales">
+
+    ✨ Ver detalles
+
+</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
         </section>
+        <div class="modal fade" id="modalSombras" tabindex="-1">
 
-        <aside>
-            <p>
-                <span>Tip Lunare:</span>  
-                Para mayor duración, aplicá primero un bálsamo hidratante.
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h4 class="modal-title">
+                    🌸 Sombras Lila Dreams
+                </h4>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <div class="row align-items-center">
+
+                    <div class="col-md-5">
+
+                        <img
+                            src="img/lila.jpg"
+                            class="img-fluid rounded"
+                            alt="Sombras">
+
+                    </div>
+
+                    <div class="col-md-7">
+
+                        <p>
+
+                            Una colección inspirada en los tonos lilas,
+                            pensada para maquillajes delicados,
+                            modernos y de larga duración.
+
+                        </p>
+
+                        <ul class="list-group">
+
+                            <li class="list-group-item">
+                                ✨ Alta pigmentación
+                            </li>
+
+                            <li class="list-group-item">
+                                💧 Waterproof
+                            </li>
+
+                            <li class="list-group-item">
+                                🌸 Cruelty Free
+                            </li>
+
+                            <li class="list-group-item">
+                                ⏰ Hasta 12 horas
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal">
+
+                    Cerrar
+
+                </button>
+
+                <button class="btn btn-lunare">
+
+                     Comprar ahora
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div class="modal fade" id="modalLabiales" tabindex="-1">
+
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h4 class="modal-title">
+                    💄 Labial Red Passion
+                </h4>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <div class="row align-items-center">
+
+                    <div class="col-md-5">
+
+                        <img
+                            src="img/labiosrojos.jpg"
+                            class="img-fluid rounded"
+                            alt="Labial Red Passion">
+
+                    </div>
+
+                    <div class="col-md-7">
+
+                        <p>
+                            Un labial de larga duración con acabado aterciopelado,
+                            ideal para lograr un look elegante e intenso durante
+                            todo el día.
+                        </p>
+
+                        <ul class="list-group">
+
+                            <li class="list-group-item">
+                                💋 Color intenso
+                            </li>
+
+                            <li class="list-group-item">
+                                ✨ Acabado mate
+                            </li>
+
+                            <li class="list-group-item">
+                                💧 Hidratación prolongada
+                            </li>
+
+                            <li class="list-group-item">
+                                ⏰ Hasta 16 horas
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal">
+
+                    Cerrar
+
+                </button>
+
+                <button
+                    class="btn btn-lunare">
+
+                    Comprar ahora
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+        <section class="container my-5">
+
+   <div class="alert alert-light alert-lunare d-flex align-items-center">
+
+        <div class="me-3 fs-2">
+            ✨
+        </div>
+
+        <div>
+
+            <h5 class="mb-1">
+                Tip Lunare
+            </h5>
+
+            <p class="mb-0">
+                Aplicá primero un bálsamo hidratante para conseguir un acabado uniforme y aumentar la duración del labial.
             </p>
-        </aside>
+
+        </div>
+
+    </div>
+
+</section>
 <section class="float-demo clearfix">
+
+    <h2>🖌 Herramientas que hacen la diferencia</h2>
+
     <figure>
-        <img src="img/brochas.jpg" alt="Brochas de maquillaje" class="float-img">
-        <figcaption>Brochas Lunare para un acabado profesional</figcaption>
+
+        <img
+            src="img/brochas.jpg"
+            alt="Brochas Lunare"
+            class="float-img">
+
+        <figcaption>
+            Set profesional de brochas Lunare
+        </figcaption>
+
     </figure>
 
-    <p class="float-texto">
-        Este bloque demuestra el uso de <strong>float</strong>, <strong>overflow</strong> y 
-        la corrección de la flotación con un patrón <em>clearfix</em>. El texto rodea la imagen
-        de brochas para crear una composición visual similar a una revista de belleza.
-    </p>
+    <div class="float-texto">
+
+        <p>
+
+            Un maquillaje impecable no depende únicamente de los productos,
+            sino también de las herramientas que utilizás.
+
+        </p>
+
+        <p>
+
+            Nuestro set de brochas fue diseñado para aplicar sombras,
+            difuminar colores y conseguir un acabado uniforme con mayor
+            precisión.
+
+        </p>
+<p>
+
+    Con las herramientas adecuadas, cada aplicación resulta más precisa,
+    cómoda y uniforme, permitiéndote resaltar tu belleza con un acabado
+    profesional.
+
+</p>
+
+    </div>
+
 </section>
-        <div class="recomendacion-producto">
-    <h3>Recomendación de compra Lunare</h3>
+        <div class="decoracion">
+
+    <span></span>
+
+    <span class="flor">✿</span>
+
+    <span></span>
+
+</div>
+
+<h2>Recomendación de compra Lunare</h2>
     <p>
         Para lograr un look completo, te sugerimos combinar nuestras sombras 
         <strong>Lila Dreams</strong> con el labial <strong>Red Passion</strong>. 
         Los tonos se equilibran creando un contraste suave y elegante.
     </p>
 </div>
-        
+        <div class="my-5"></div>
    <section class="demo-display">
-    <h3>Demostración de estilos de visualización</h3>
+    <h3>✨ Pequeños detalles, grandes resultados</h3>
 
-    <p class="tag-inline">
-        <span>Tip:</span>
-        <strong>El acabado de un maquillaje también depende de los detalles.</strong>
-    </p>
+  <p class="tag-inline">
+
+    <span>Consejo:</span>
+
+    <strong>
+        Un maquillaje impecable también depende de una buena preparación de la piel.
+    </strong>
+
+</p>
 
     <p class="oculto-display">
         Este texto NO se ve (display:none), igual que cuando querés ocultar un brillo no deseado.
@@ -130,19 +516,93 @@
         como una marca que está pero no se nota.
     </p>
 </section>
-<section class="multimedia">
-    <h2>Looks Lunare en acción</h2>
-<audio controls>
-        <source src="media/asmr-makeup.mp3" type="audio/mpeg">
-    </audio>
-    
+<section class="container my-5">
 
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/XSCAWwuh80c?si=LnoK-jMXz1--4fYz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="card shadow-sm border-0">
+
+        <div class="card-body p-4">
+
+            <h2 class="text-center mb-3">
+
+                Inspirate con Lunare
+
+            </h2>
+
+            <p class="text-center text-muted mb-4">
+
+                Descubrí un maquillaje completo, relajate con nuestro audio
+                ASMR y conocé un look inspirado en la esencia de Lunare.
+
+            </p>
+
+            <div class="row g-4 align-items-center">
+
+                <div class="col-lg-4">
+
+                    <h5>🎧 Momento Relax</h5>
+
+                    <p>
+
+                        Relajate unos minutos y prepará tu rutina de maquillaje con un ambiente suave y armonioso.
+
+                    </p>
+
+                    <audio controls class="w-100">
+
+                        <source src="media/asmr-makeup.mp3"
+                                type="audio/mpeg">
+
+                    </audio>
+
+                </div>
+
+                <div class="col-lg-8">
+
+                    <div class="ratio ratio-16x9">
+
+                        <iframe
+                            src="https://www.youtube.com/embed/XSCAWwuh80c?si=LnoK-jMXz1--4fYz"
+                            title="Look Lunare"
+                            allowfullscreen>
+
+                        </iframe>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="cierre-lunare">
+
+    <div class="decoracion">
+
+        <span></span>
+
+        <span class="flor">✿</span>
+
+        <span></span>
+
+    </div>
+
+    <h2>Gracias por descubrir Lunare</h2>
+
+    <p>
+        Creemos que la belleza nace de la confianza, el cuidado y la autenticidad.
+        Cada producto fue pensado para acompañarte y resaltar lo mejor de vos.
+    </p>
+
 </section>
 </main>
+
     <footer>
         <p>Lunare 2025</p>
     </footer>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

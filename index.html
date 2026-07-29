@@ -1,97 +1,349 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lunare Beauty</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
 
+    <title>Lunare Beauty</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
 
 <body>
 
-    
-    <header>
+<header>
 
-        <h1>Lunare</h1>
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Quiénes somos</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                
-                <li><a href="#valores">Nuestros Valores</a></li>
-            </ul>
-        </nav>
-    </header>
+<div class="container">
 
-    <main>
-        <section id="bienvenida">
-            <img src="img/ojoscerradoslila.jpg" 
-                 alt="Maquillaje con tonos lila" 
-                 class="portada"
-                 >
+<a class="navbar-brand" href="index.html">
 
-            <h2>Bienvenidos a Lunare</h2>
+<h1 class="m-0">
+Lunare
+</h1>
 
-            <p>
-                <strong>Lunare</strong> es una marca de maquillaje inspirada en la elegancia, el arte y la belleza consciente.
-                Nuestros productos buscan resaltar la <em>autenticidad</em> de cada persona.
-                <br><br>
-                Como decía una artista del maquillaje:
-                <q>La belleza comienza en el momento en que decides ser tú misma</q>.
-            </p>
+</a>
 
-            <hr>
-            <img src="img/maquillajerosa.jpg" 
-                 alt="Maquillaje elegante con tonos rosas"
-                 >
-        </section>
-         <div class="layout-flex">
+<button
+class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#menu"
+aria-controls="menu"
+aria-expanded="false"
+aria-label="Abrir menú">
 
-        <article id="valores">
-            <h3>Nuestros valores</h3>
+<span class="navbar-toggler-icon"></span>
 
-            <ol>
-                <li>Calidad profesional</li>
-                <li>Productos Cruelty-Free</li>
-                <li>Ingredientes seguros</li>
-                <li>Respeto por la piel natural</li>
-            </ol>
+</button>
 
-            <blockquote>
-                “El maquillaje no es una máscara, es una forma de expresión.”
-                <cite> – Lunare Beauty</cite>
-            </blockquote>
-        </article>
+<div class="collapse navbar-collapse" id="menu">
 
-        <aside>
-            <p>
-                <span>Dato curioso:</span>  
-                La sigla <abbr title="Alta Pigmentación Profesional">APP</abbr> se utiliza para indicar que un producto tiene colores intensos y duraderos.
-            </p>
-        </aside>
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+
+<a class="nav-link active"
+href="index.html">
+
+Inicio
+
+</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link"
+href="nosotros.html">
+
+Quiénes somos
+
+</a>
+
+</li>
+
+<li class="nav-item dropdown">
+
+<a
+class="nav-link dropdown-toggle"
+href="#"
+role="button"
+data-bs-toggle="dropdown"
+aria-expanded="false">
+
+Productos
+
+</a>
+
+<ul class="dropdown-menu">
+
+<li>
+
+<a class="dropdown-item"
+href="productos.html">
+
+Todos los productos
+
+</a>
+
+</li>
+
+<li>
+
+<a class="dropdown-item"
+href="productos.html#labios">
+
+Labiales
+
+</a>
+
+</li>
+
+<li>
+
+<a class="dropdown-item"
+href="productos.html#ojos">
+
+Sombras
+
+</a>
+
+</li>
+
+</ul>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link"
+href="contacto.html">
+
+Contacto
+
+</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link"
+href="#valores">
+
+Valores
+
+</a>
+
+</li>
+
+</ul>
+
 </div>
 
-      <div class="contenedor-tips">
-    <h3>Tips de Belleza Lunare</h3>
-    <ul>
-        <li><strong>Hidratá tu piel</strong> antes del maquillaje para lograr un acabado más luminoso.</li>
-        <li><strong>Usá tonos suaves</strong> en ojos y labios para un look fresco y natural.</li>
-        <li><strong>No olvides el protector solar</strong>: protege tu piel y resalta los colores del maquillaje.</li>
-    </ul>
 </div>
+
+</nav>
+
+</header>
+
+ <main>
+
+<section id="bienvenida" class="container py-5">
+
+<div id="carouselLunare"
+class="carousel slide mb-5"
+data-bs-ride="carousel">
+
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselLunare" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselLunare" data-bs-slide-to="1"></button>
+    </div>
+
+    <div class="carousel-inner rounded shadow">
+
+        <div class="carousel-item active">
+            <img src="img/ojoscerradoslila.jpg"
+                 class="d-block w-100"
+                 alt="Maquillaje tonos lila">
+        </div>
+
+        <div class="carousel-item">
+            <img src="img/maquillajerosa.jpg"
+                 class="d-block w-100"
+                 alt="Maquillaje tonos rosas">
+        </div>
+
+    </div>
+
+    <button class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselLunare"
+            data-bs-slide="prev">
+
+        <span class="carousel-control-prev-icon"></span>
+
+    </button>
+
+    <button class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselLunare"
+            data-bs-slide="next">
+
+        <span class="carousel-control-next-icon"></span>
+
+    </button>
+
+</div>
+
+<h2 class="text-center mb-4">
+
+Bienvenidos a Lunare
+
+</h2>
+
+<p class="text-center mx-auto" style="max-width:800px;">
+
+<strong>Lunare</strong> es una marca de maquillaje inspirada en la elegancia, el arte y la belleza consciente.
+
+Nuestros productos buscan resaltar la <em>autenticidad</em> de cada persona.
+
+<br><br>
+
+Como decía una artista del maquillaje:
+
+<q>La belleza comienza en el momento en que decides ser tú misma.</q>
+
+</p>
+
+</section>
+
+<section class="container my-5">
+
+    <div class="row g-4">
+
+        <div class="col-lg-8">
+
+            <div class="card shadow-sm h-100">
+
+                <div class="card-body">
+
+                   <div id="valores">
+
+                  <h3>
+                   Nuestros valores
+                   </h3>
+
+                    <ol>
+                        <li>Calidad profesional</li>
+                        <li>Productos Cruelty-Free</li>
+                        <li>Ingredientes seguros</li>
+                        <li>Respeto por la piel natural</li>
+                    </ol>
+
+                    <blockquote>
+                        “El maquillaje no es una máscara,
+                        es una forma de expresión.”
+                        <cite>– Lunare Beauty</cite>
+                    </blockquote>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-4">
+
+            <div class="card shadow-sm h-100">
+
+                <div class="card-body">
+
+                    <h4>Dato curioso</h4>
+
+                    <p>
+
+                        La sigla
+
+                        <abbr title="Alta Pigmentación Profesional">
+                            APP
+                        </abbr>
+
+                        significa que un producto posee una
+                        pigmentación intensa y de larga duración.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <section class="container my-5">
+
+<div class="card shadow-sm">
+
+<div class="card-body">
+
+<h3 class="mb-4">
+
+✨ Tips de Belleza Lunare
+
+</h3>
+
+<ul class="list-group list-group-flush">
+
+<li class="list-group-item">
+
+💧 <strong>Hidratá tu piel</strong> antes del maquillaje para lograr un acabado luminoso.
+
+</li>
+
+<li class="list-group-item">
+
+🌸 <strong>Usá tonos suaves</strong> para un look fresco y natural.
+
+</li>
+
+<li class="list-group-item">
+
+☀️ <strong>No olvides el protector solar</strong>, protege tu piel y resalta el maquillaje.
+
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
     </main>
 
     <footer>
         <p>Lunare 2025</p>
     </footer>
 <a href="#bienvenida" class="boton-fixed">Subir</a>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
