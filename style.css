@@ -4,11 +4,13 @@
   margin: 0;
   padding: 0;
 }
+:root{
+    --rosa: #7c4b94;
+    --fuente-titulos: 'Playfair Display', serif;
+}
 
 body {
 
-    margin: 0;
-    padding: 0;
     padding-top: 20px;
     line-height: 1.6;
 
@@ -38,12 +40,6 @@ h1 {
     text-shadow: 1px 1px 4px rgba(101, 59, 115, 0.15);
 }
 
-
-
-h1.titulo-especial {
-  color: tomato; /* para ver cascada */
-}
-
 h2 {
   font-size: 1.8rem;
   text-align: center;
@@ -61,6 +57,19 @@ p {
   line-height: 1.7;
 }
 
+a:hover,
+a:focus {
+    color: #9b61c6;
+    text-decoration: underline;
+}
+
+a:active {
+    transform: translateY(1px);
+}
+a {
+    color: #7a3fb3;
+    text-decoration: none;
+}
 
 header {
     margin: 0 auto;     
@@ -96,28 +105,23 @@ nav a.active {
     color: #ffb3d9 !important;
 }
 
-a:hover,
-a:focus {
-    color: #9b61c6;
-    text-decoration: underline;
-}
 
-a:active {
-    transform: translateY(1px);
-}
-a {
-    color: #7a3fb3;
-    text-decoration: none;
-}
-
-
-
+/*==================================================
+               QUIÉNES SOMOS
+==================================================*/
 #valores{
     background-color:#f8e9fc;
     border:2px solid #e9c7db;
     border-radius:15px;
     padding:25px;
     scroll-margin-top:140px;
+}
+.contenedor-box {
+    width: 80%;
+    margin: 20px auto;     
+    padding: 20px 25px;    
+    border: 2px solid #c9b3d9;  
+    background-color: #fafafa;
 }
 
 .contenedor-box h2 {
@@ -174,121 +178,6 @@ a {
     color: #444;
     margin-bottom: 12px;
 }
-.recomendacion-producto {
-    width: 85%;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #ffffffdd;
-    border: 2px dashed #ba68c8; 
-    border-radius: 12px;
-    box-shadow: 0 4px 14px rgba(186, 104, 200, 0.18);
-    backdrop-filter: blur(4px);
-    text-align: center;
-}
-
-.recomendacion-producto h3 {
-    font-family: 'Playfair Display', serif;
-    color: #a25ea8;
-    margin-bottom: 10px;
-}
-
-.contenedor-box {
-    width: 80%;
-    margin: 20px auto;     
-    padding: 20px 25px;    
-    border: 2px solid #c9b3d9;  
-    background-color: #fafafa;
-}
-
-.product-card{
-    border-radius:20px;
-    overflow:hidden;
-    transition:all .35s ease;
-    background:white;
-}
-
-.product-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 18px 35px rgba(162,94,168,.18)!important;
-}
-.product-card img{
-    height:330px;
-    object-fit:cover;
-}
-.product-card h3{
-    color:#7c4b94;
-    font-weight:bold;
-    margin-bottom:8px;
-}
-
-.product-card p{
-    color:#555;
-    line-height:1.6;
-}
-.product-card .badge {
-    position: absolute;   
-    top: 10px;
-    right: 10px;
-    background-color: #ffb3d9;
-    color: #653B73;
-    padding: 4px 10px;
-    border-radius: 999px;
-    font-size: 0.75rem;
-}
-.productos-intro {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.productos-intro h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-.productos-intro p {
-    max-width: 700px;
-    margin: 0 auto;
-    line-height: 1.5;
-}
-
-.portada {
-    border: 3px solid pink;
-    padding: 5px;
-    margin-bottom: 15px;
-}
-
-section p span {
-    font-weight: 700;
-    color: #653B73;
-}
-
-
-section > p {
-    margin-top: 8px;
-}
-
-
-h2 + p {
-    font-style: italic;
-}
-
-
-h2 ~ ol {
-    margin-top: 8px;
-}
-
-article ul li:first-child {
-    font-weight: 700;
-}
-article ol li:nth-child(2) {
-    color: #b76e79;
-}
-
-.product-card:not(:first-child) {
-    box-shadow: 0 0 10px rgba(101, 59, 115, 0.12);
-}
-
-
 blockquote {
     position: relative;
     padding-left: 28px;
@@ -352,6 +241,211 @@ blockquote::after {
     margin: 12px auto;
 }
 
+.demo-display{
+    width: 80%;
+    margin: 100px auto 50px auto;
+}
+
+.demo-display h3{
+    text-align: center;
+    color: #7c4b94;
+    margin-bottom: 15px;
+}
+
+.demo-display p{
+    text-align: center;
+}
+
+.cierre-lunare{
+    width:80%;
+    margin:60px auto;
+    text-align:center;
+}
+
+.cierre-lunare h2{
+    color:#a25ea8;
+    margin:18px 0;
+}
+
+.cierre-lunare p{
+    max-width:700px;
+    margin:auto;
+    color:#555;
+    font-size:1.08rem;
+    line-height:1.7;
+}
+/*==================================================
+                  PRODUCTOS
+==================================================*/
+.productos-intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.productos-intro h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.productos-intro p {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+.productos-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    gap: 20px;
+}
+
+.productos-flex .product-card {
+    flex: 1 1 260px;               
+}
+
+.productos-flex .product-card:nth-child(1) {
+    order: 2;
+}
+
+.productos-flex .product-card:nth-child(2) {
+    order: 1;
+}
+.product-card{
+    border-radius:20px;
+    overflow:hidden;
+    transition:all .35s ease;
+    background:white;
+}
+
+.product-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 35px rgba(162,94,168,.18)!important;
+}
+.product-card img{
+    height:330px;
+    object-fit:cover;
+}
+.product-card h3{
+    color:#7c4b94;
+    font-weight:bold;
+    margin-bottom:8px;
+}
+
+.product-card p{
+    color:#555;
+    line-height:1.6;
+}
+.product-card .badge {
+    position: absolute;   
+    top: 10px;
+    right: 10px;
+    background-color: #ffb3d9;
+    color: #653B73;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+}
+.recomendacion-producto{
+    width: 85%;
+    margin: 50px auto;
+    padding: 45px 35px;
+
+    background: #fff;
+
+    border: 2px solid #e6c8ef;
+    border-radius: 16px;
+
+    box-shadow: 0 8px 20px rgba(162,94,168,.12);
+}
+.recomendacion-producto h2{
+    margin-bottom:25px;
+}
+.recomendacion-producto p{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.7;
+}
+.recomendacion-producto{
+    margin-bottom: 70px;
+}
+
+
+/*==================================================
+                    CONTACTO
+==================================================*/
+
+.card-lunare{
+    border: none;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+    padding: 10px;
+}
+
+.card-lunare h3{
+    color: var(--rosa);
+    font-family: var(--fuente-titulos);
+}
+
+.card-lunare i{
+    color: var(--rosa);
+    margin-right: 8px;
+    font-size: 1.1rem;
+}
+
+.form-lunare{
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+}
+
+.form-lunare label{
+    font-weight: 600;
+}
+
+.form-lunare input,
+.form-lunare select,
+.form-lunare textarea{
+    border: 1px solid #cfa6dd;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.form-lunare input:focus,
+.form-lunare select:focus,
+.form-lunare textarea:focus{
+    outline: none;
+    border-color: var(--rosa);
+    box-shadow: 0 0 0 .2rem rgba(232,148,181,.25);
+}
+
+.alert-lunare{
+    background: #fff;
+    border-left: 6px solid var(--rosa);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+    padding: 20px;
+}
+
+.alert-lunare h5{
+    color: var(--rosa);
+    font-family: var(--fuente-titulos);
+}
+.alert-lunare p{
+    margin: 0;
+    color: #555;
+}
+
+.alert-lunare .fs-2{
+    font-size: 2rem !important;
+}
+
+/*==================================================
+                    BOTONES
+==================================================*/
 button {
     background-color: #A25EA8;
     color: white;
@@ -379,35 +473,6 @@ button:hover {
     text-decoration: none;
     box-shadow: 0 0 12px rgba(0,0,0,0.25);
 }
-
-.form-lunare {
-    background-color: rgba(255, 240, 250, 0.7); 
-    border: 2px solid #d8a7e8; 
-    border-radius: 12px;
-    padding: 25px;
-    width: 100%;
-    max-width: 550px;
-    margin: 0 auto;
-    box-shadow: 0 4px 12px rgba(150, 100, 160, 0.15);
-    backdrop-filter: blur(2px);
-}
-
-.form-lunare input,
-.form-lunare select,
-.form-lunare textarea {
-    border: 1px solid #cfa6dd;
-    border-radius: 8px;
-    background-color: #fff;
-}
-
-.form-lunare input:focus,
-.form-lunare select:focus,
-.form-lunare textarea:focus {
-    outline: none;
-    border-color: #b76ee0;
-    box-shadow: 0 0 6px rgba(183, 110, 224, 0.4);
-}
-
 .btn-lunare{
 
     background: linear-gradient(90deg,#ba68c8,#a25ea8);
@@ -440,75 +505,14 @@ button:hover {
 
 }
 
-
-.productos-flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: flex-start;
-    gap: 20px;
+/*==================================================
+            COMPONENTES GENERALES
+==================================================*/
+.portada {
+    border: 3px solid pink;
+    padding: 5px;
+    margin-bottom: 15px;
 }
-
-.productos-flex .product-card {
-    flex: 1 1 260px;               
-}
-
-.productos-flex .product-card:nth-child(1) {
-    order: 2;
-}
-
-.productos-flex .product-card:nth-child(2) {
-    order: 1;
-}
-
-.tag-inline span {
-    display: inline;      
-    padding: 0 4px;
-}
-
-.tag-inline strong {
-    display: inline-block; 
-    padding: 2px 6px;
-    border-radius: 999px;
-    background-color: #f8e9fc;
-}
-.oculto-display {
-    display: none;
-}
-
-.oculto-visibility {
-    visibility: hidden;
-}
-
-img{
-    max-width:100%;
-    height:auto;
-}
-
-footer p {
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-    margin-top: 40px;
-    border-top: 3px solid #ba68c8;
-}
-/* ===== CAROUSEL ===== */
-
-#carouselLunare{
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-#carouselLunare img{
-    height: 550px;
-    object-fit: cover;
-    border-radius: 15px;
-}
-
-/*==========================
-      DECORACIÓN LUNARE
-==========================*/
-
 .decoracion{
     display:flex;
     align-items:center;
@@ -531,80 +535,156 @@ footer p {
     color: #ba68c8;
     line-height: 1;
 }
-.alert-lunare{
-    background: linear-gradient(135deg,#fffcff,#f8e9fc);
-    border: 2px solid #e7c3ef !important;
+.tag-inline span {
+    display: inline;      
+    padding: 0 4px;
+}
+
+.tag-inline strong {
+    display: inline-block; 
+    padding: 2px 6px;
+    border-radius: 999px;
+    background-color: #f8e9fc;
+}
+.oculto-display {
+    display: none;
+}
+
+.oculto-visibility {
+    visibility: hidden;
+}
+img{
+    max-width:100%;
+    height:auto;
+}
+/* ===== CAROUSEL ===== */
+
+#carouselLunare{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#carouselLunare img{
+    height: 550px;
+    object-fit: cover;
     border-radius: 15px;
-    box-shadow: 0 6px 18px rgba(162,94,168,.12);
+}
+/*==================================================
+                    FOOTER
+==================================================*/
+
+footer p {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+    border-top: 3px solid #ba68c8;
 }
 
-.alert-lunare h5{
-    color:#7c4b94;
-    font-family:'Playfair Display', serif;
-    margin-bottom:6px;
+/*==================================================
+        SELECTORES AVANZADOS CSS
+==================================================*/
+section p span {
+    font-weight: 700;
+    color: #653B73;
 }
 
-.alert-lunare p{
+
+section > p {
+    margin-top: 8px;
+}
+
+
+h2 + p {
+    font-style: italic;
+}
+
+
+h2 ~ ol {
+    margin-top: 8px;
+}
+
+article ul li:first-child {
+    font-weight: 700;
+}
+article ol li:nth-child(2) {
+    color: #b76e79;
+}
+
+.product-card:not(:first-child) {
+    box-shadow: 0 0 10px rgba(101, 59, 115, 0.12);
+}
+
+.tips-lunare{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    margin-top:20px;
+}
+
+.tip-item{
+    background:#fff7fb;
+    border-left:5px solid var(--rosa);
+    border-radius:12px;
+    padding:18px 20px;
+    box-shadow:0 4px 10px rgba(0,0,0,.06);
+    transition:.3s;
+}
+
+.tip-item:hover{
+    transform:translateX(5px);
+    box-shadow:0 8px 18px rgba(162,94,168,.15);
+}
+
+.tip-item p{
+    margin:6px 0 0;
+    color:#555;
+}
+.dato-curioso{
+    margin-top:25px;
+    padding:18px;
+    background:#fff7fb;
+    border-left:5px solid var(--rosa);
+    border-radius:12px;
+}
+
+.dato-curioso h5{
+    color:var(--rosa);
+    font-family:var(--fuente-titulos);
+    margin-bottom:10px;
+}
+
+.dato-curioso p{
     margin:0;
     color:#555;
 }
 
-.alert-lunare .fs-2{
-    font-size:2rem !important;
-}
-.cierre-lunare{
-    width:80%;
-    margin:60px auto;
-    text-align:center;
-}
 
-.cierre-lunare h2{
-    color:#a25ea8;
-    margin:18px 0;
-}
 
-.cierre-lunare p{
-    max-width:700px;
-    margin:auto;
-    color:#555;
-    font-size:1.08rem;
-    line-height:1.7;
-}
-.recomendacion-producto{
-    width: 85%;
-    margin: 50px auto;
-    padding: 45px 35px;
 
-    background: #fff;
 
-    border: 2px solid #e6c8ef;
-    border-radius: 16px;
 
-    box-shadow: 0 8px 20px rgba(162,94,168,.12);
-}
-.recomendacion-producto h2{
-    margin-bottom:25px;
-}
-.recomendacion-producto p{
-    max-width: 850px;
-    margin: 0 auto;
-    text-align: center;
-    line-height: 1.7;
-}
-.recomendacion-producto{
-    margin-bottom: 70px;
-}
-.demo-display{
-    width: 80%;
-    margin: 100px auto 50px auto;
-}
 
-.demo-display h3{
-    text-align: center;
-    color: #7c4b94;
-    margin-bottom: 15px;
-}
 
-.demo-display p{
-    text-align: center;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
